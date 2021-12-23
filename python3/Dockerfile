@@ -8,7 +8,7 @@ FROM python:3.10
 # vim
 
 # update pip
-RUN pip install --upgrade pip setuptools
+RUN pip install --upgrade pip setuptools wheel
 
 # install JupyterLab
 RUN pip install --no-cache-dir \
@@ -42,7 +42,8 @@ RUN pip install --no-cache-dir \
 #  opencv-python
  
 # install extra packages
-#RUN pip install --no-cache-dir \
+RUN pip install --no-cache-dir \
+  sympy
 #  pydeps \
 #  graphviz \
 #  pandas_profiling \
