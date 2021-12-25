@@ -43,7 +43,8 @@ RUN pip install --no-cache-dir \
  
 # install extra packages
 RUN pip install --no-cache-dir \
-  sympy
+  sympy \
+  matplotlib-venn
 #  pydeps \
 #  graphviz \
 #  pandas_profiling \
